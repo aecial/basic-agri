@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AuctionPage.css">
+    <title>AuctionPage</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="logo-cont">
+            <img class="logo-pic" src="https://images.pexels.com/photos/9189263/pexels-photo-9189263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="logo">
+            <p>Agrikultur'App</p>
+        </div>
+        <div class="links-cont">
+            <a href="AuctionPage.html">Auction Page</a>
+            <a href="Profile.html">Profile</a>
+            <a href="Pricing.html">Product Pricing Guidelines</a>
+            <a href="logIn.html"><button>Sign Out</button></a>
+        </div>
+    </nav>
+    <main>
+        <h1>Welcome to the HomePage</h1>
+        <h2>Offered Produce Auctions</h2>
+        <div class="offers">
+            <button class="type_card" onclick="display('Garlic')">
+                <img class="type_image" src="https://images.pexels.com/photos/533342/pexels-photo-533342.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                <h3 class="type_title" id="type_title">Garlic</h3>
+            </button>
+            <button class="type_card" onclick="display('Onion')">
+                <img class="type_image" src="https://images.pexels.com/photos/533342/pexels-photo-533342.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                <h3 class="type_title" id="type_title">Onion</h3>
+            </button>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
