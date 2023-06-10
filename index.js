@@ -9,4 +9,5 @@ function login() {
 
 function display(name) {
   alert(`You clicked ${name}`);
+  window.location.assign(`${name}.html`);
 }
