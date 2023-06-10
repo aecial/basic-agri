@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garlic Auctions</title>
+    <title>Create New Auction</title>
     <link rel="stylesheet" href="AuctionPage.css">
 </head>
 <body>
@@ -20,9 +20,18 @@
         </div>
     </nav>
     <main>
-        <h3>There are currently no active auctions in Garlic Section</h3>
-        <button onclick="newAuction()">Create New Auction</button>
-        <div class="listings"></div>
+        <form action="">
+            <label for="crop_category">Choose a Crop Category:</label>
+            <select name="crop_category" id="crop_category">
+                <option value="Garlic" selected>Garlic</option>
+                <option value="Onion">Onion</option>
+            </select>
+            <label for="crop_price">Crop Price per kg:</label>
+            <input id="crop_price" type="number" />
+            <label for="crop_volume">Crop Volume in Kg:</label>
+            <input id="crop_volume" type="number">
+            <button onclick="confirmSubmit()">Submit</button>
+        </form>
     </main>
     <script src="index.js"></script>
 </body>
