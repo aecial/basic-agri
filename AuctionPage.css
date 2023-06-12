@@ -85,3 +85,16 @@ main {
 .type_title {
     text-align: center;
 }
+.myCard {
+    width: 19rem;
+    font-size: 1rem;
+    outline: 1px solid #dcdcdc;
+    border-radius: 5px;
+}
+.myCard_pic {
+    width: 100%;
+    margin-bottom: 0.1rem;
+}
+.myCard_body {
+    padding: 1rem;
+}

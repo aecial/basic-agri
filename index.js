@@ -27,17 +27,40 @@ function newListing(category) {
 }
 
 function confirmSubmit() {
-  let crop_category = document.getElementById("crop_category").value;
+  const crop_category = document.getElementById("crop_category").value;
   const crop_price = document.getElementById("crop_price").value;
   const crop_volume = document.getElementById("crop_volume").value;
   if (
     confirm(
-      `Crop Category: ${crop_category}\nCrop Price per Kg: ${crop_price}\nCrop Volume: ${crop_volume}`
+      `Crop Category: ${crop_category}\nCrop Price per Kg: ${crop_price}\nCrop Volume: ${crop_volume} kg\nTotal Price: ₱${
+        crop_price * crop_volume
+      } `
     )
   ) {
-    newListing(crop_category);
+    window.location.assign("AuctionPage.html");
     alert("created new listing");
   } else {
     alert("Sadge");
+  }
+}
+
+function btnDis() {
+  const crop_category = document.getElementById("crop_category").value;
+  const crop_price = document.getElementById("crop_price").value;
+  const crop_volume = document.getElementById("crop_volume").value;
+  const btn = document.getElementById("form-btn");
+  if (crop_category === !null && crop_price === !"" && crop_volume === !"") {
+    btn.disabled = true;
+  } else {
+    btn.disabled = false;
+  }
+}
+
+function radioChange(val) {
+  const form = document.getElementById("credentials_inp");
+  if (val === "Farmer") {
+    form.innerText = `Upload RSBSA: `;
+  } else {
+    form.innerText = "Upload Valid Id: ";
   }
 }

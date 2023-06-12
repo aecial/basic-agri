@@ -18,21 +18,23 @@
         </div>
         <div class="row">
             <label for="password_inp">Password: </label>
-            <input id="password_inp" type="text" required/>
+            <input id="password_inp" type="password" required/>
         </div>
         <div class="row">
             <label for="conf_password_inp">Confirm Password: </label>
-            <input id="conf_password_inp" type="text" required/>
+            <input id="conf_password_inp" type="password" required/>
         </div>
         <div class="row">
-            <label for="password_inp">Password: </label>
-            <input id="password_inp" type="text" required/>
+            <label for="account_type">Account Type: </label>
+            <input id="account_type_farmer" name="account_type" onchange="radioChange('Farmer')" type="radio" checked required>Farmer</input>
+            <input id="account_type_consumer" name="account_type" type="radio" onchange="radioChange('Consumer')" required>Consumer</input>
         </div>
         <div class="row">
-            <label for="credentials_inp">Upload Document: </label>
+            <label id="credentials_inp" for="credentials_inp">Upload RSBSA: </label>
             <input id="credentials_inp" type="file" required/>
         </div>
         <button type="submit" id="login-btn">Submit</button>
     </form>
+    <script src="index.js"></script>
 </body>
 </html>
